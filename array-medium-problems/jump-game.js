@@ -21,7 +21,6 @@ var canJump = function (nums) {
 
     for (let i = nums.length - 2; i >= 0; i--) {
         if (i + nums[i] >= finalPosition) finalPosition = i
-
     }
 
     return finalPosition === 0
