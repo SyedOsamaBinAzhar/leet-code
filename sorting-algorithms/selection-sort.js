@@ -6,19 +6,18 @@ function selectionSort(arr) {
                 minValIndex = j
             }
         }
+        //swap
         let temp = arr[i];
         arr[i] = arr[minValIndex];
         arr[minValIndex] = temp
 
     }
     return arr
-    // console.log("arr", arr)
-
 }
 
 
 console.log(selectionSort([5, 3, 4, 1, 2]))
-// selectionSort([5, 3, 4, 1, 2])
-// selectionSort([5, 4, 3, 2, 1])
-// selectionSort([19, 44, 38, 5, 47, 15])
+//OUTPUT: [1,2,3,4,5]
+console.log(selectionSort([19, 44, 38, 5, 47, 15]))
+//OUTPUT: [ 5, 15, 19, 38, 44, 47 ]
 
